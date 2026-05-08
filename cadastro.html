@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro-Devsetup</title>
+</head>
+<body>
+    <header>
+        <h1>crie sua conta na devsetup</h1>
+        <nav>
+            <a href="index.html">voltar para a pagina inicial</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>formulário de cadastro</h2>
+            <form>
+                <label for="nome">nome completo:</label><br>
+                <input 
+                type="text" 
+                id="nome" 
+                name="nome"
+                placeholder="digite seu nome completo"
+                required>
+                <br><br>
+                <label for="email">email:</label><br><br>
+                <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="digite seu email"
+                required>
+                <br><br>
+                <label for="senha">senha:</label><br><br>
+                <input 
+                type="password" 
+                id="senha" 
+                name="senha"
+                placeholder="digite sua senha" 
+                required>
+                <br><br>
+
+                <label>Nível do Cliente:</label><br>
+                <input 
+                type="radio" 
+                id="comum" 
+                name="nível" 
+                value="comum">
+                <label for="comum">Cliente comum</label><br>
+                <input 
+                type="radio" 
+                id="empresa" 
+                name="nivel" 
+                value="empresa">
+                <label for="comum">cliente comum</label><br>
+                <input 
+                type="radio" 
+                id="empresa" name="nivel" 
+                value="empresa">
+                <label for="empresa">empresa (CNPJ)</label><br><br>
+                <label for="interesse">area de interesse</label>
+                <select 
+                name="interesse" 
+                id="interesse">
+                <option value="hardware">hardware</option>
+                <option value="periféricos">periféricos</option>
+                <option value="desenvolvimento">desenvolvimento</option>
+                </select><br><br>
+                <button>
+                    <type="submit">Enviar Cadastro</button>
+                    </form>
+        </section>
+    </main>
+    
+</body>
+</html>

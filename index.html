@@ -6,45 +6,248 @@
     <title>Devsetup Equipamentos</title>
 </head>
 <body>
-    <header>
-        <h1>Devsetup Equipamentos</h1>
-        <nav>
+       <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Segoe UI', Tahoma, Geneva,
+                Verdana, sans-serif;
+                background-color: #ffffff;
+                color: #333333;
+                line-height: 1.6;
+        }
+
+        h1,h2,h3 {
+            color: #1a1a1a;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .cabecalhoPrincipal {
+            background-color: #ffffff;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nomeLogo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #dd86a4;
+            font-size: 3rem;color: #dd86a4 ;
+        }
+
+        .listaNavegacao {
+            display: flex;
+            gap: 2rem;
+        }
+
+
+        .listaNavegacao ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .linkNav {
+            font-weight: 600;
+            transition: color 0.3s ease;
+            font-family: sans-serif;
+        }
+
+        .linkNav:hover {
+            color: #dd86a4;
+            font-family: sans-serif;
+        }
+
+            .botaoPrincipal {
+                display: inline-block;
+                background-color: #dd86a4;
+                color: aliceblue;
+                padding: 0.8rem 1.5rem;
+                border-radius: 4px;
+                font-weight: bold;
+                margin-top: 1rem;
+            }
+
+              .botaoPrincipal:hover {
+            background-color: #966c51;
+            color: #ffffff;
+        }
+        .container {
+            padding: 4rem 5%;
+        }
+
+        .tituloSecao {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .gradeProdutos {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+            .container {
+                padding: 4rem 5%;
+            }
+
+            .tituloSecao {
+                text-align: center;
+                font-size: 2,5rem;
+                margin-bottom: 2rem;
+            }
+
+            .gradeProdutos {
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .cartaoProduto {
+                background-color: #ffffff;
+                border-radius: 8px;
+                padding: 1.5rem;
+                width: 300px;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+
+            .cartaoProduto:hover {
+                transform: translateY(-5px);
+            }
+
+              .rodapePrincipal {
+            background-color: #a39279;
+            color: #ffffff;
+            padding: 3rem 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .rodapePrincipal h2,
+        .rodapePrincipal h1 {
+            color: #ffffff;
+        }
+        .letrasBonitas {
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+            color: #a39279;
+        }
+    </style>
+    <header id="header" class="cabecalhoPrincipal">
+         <div id="logo">
+            <h1  class="nomeLogo">Devsetup Equipamentos</h1>
+         </div>
+        <nav id="nav" class="listaNavegacao">
             <ul>
-                <li><a href="#categorias">categorias</a></li>
-                <li><a href="#produtos">produtos</a></li>
-                <li><a href="#servicos">serviços</a></li>
-                <li><a href="cadastro.html">cadastre-se</a></li>
+                <li>
+                    <a 
+                    href="#categorias" 
+                    class="linkNav">categorias
+                </a>
+            </li>
+                <li>
+                    <a 
+                    href="#produtos" 
+                    class="linkNav"
+                    >produtos
+                </a>
+            </li>
+                <li>
+                    <a 
+                    href="#servicos" 
+                    class="linkNav"
+                    >serviços
+                </a>
+            </li>
+                <li>
+                    <a 
+                    href="cadastro.html" 
+                    class="linkNav"
+                    >cadastre-se
+                </a>
+            </li>
             </ul>
         </nav>
     </header>
+    <!--Conteudo principal-->
         <main>
-            <section id="categorias">
-                <h2>nossas categorias</h2>
+            <!--secao hero-->
+            <section id="categorias" class="secaoHero" 
+         style=
+         "background-color: #f6f3ee;
+         text-align: center;padding: 5rem 2rem;
+         border-bottom: 4px solid #dd86a4;"
+                >
+                <h2 style="font-size: 2.5rem;color: #4d3a1a ;">nossas categorias</h2>
                 <ul>
-                    <li>notebooks</li>
-                    <li>perifericos</li>
-                    <li>monitores</li>
-                    <li>placas de video</li>
+                    <li class="letrasBonitas">notebooks</li>
+                    <li  class="letrasBonitas">perifericos</li>
+                    <li  class="letrasBonitas">monitores</li>
+                    <li  class="letrasBonitas">placas de video</li>
                 </ul>
             </section>
-            <section id="produtos">
-                <h2>produtos em destaque</h2>
-                <article>
-                    <h3>teclado mecanico rgb</h3>
-                    <img src="https://images.pexels.com/photos/34204702/pexels-photo-34204702.jpeg" alt="teclado mecanico de gatinho transparente" width="300">
-                    <p>teclado de alta perfomance para devs e gamers</p>
-                    <p>preço: R$350,00</p>
+            <!--secao produtos-->
+            <section id="produtos" class="container" style="background-color: #b6afa4;">
+                <h2 class="tituloSecao" style="color: #423729; font-weight: 2.5rem;">produtos em destaque</h2>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;"></div>
+                <article class="cartaoProduto">
+                    <h3 class="nomeProduto" style="color: #4d3a1a;">teclado mecanico rgb</h3>
+                    <img 
+                    src="https://images.pexels.com/photos/34204702/pexels-photo-34204702.jpeg" 
+                    alt="teclado mecanico de gatinho transparente"
+                     width="260"
+                     style="border-radius: 4px;margin-bottom: 1rem;"
+                     />
+                     <p><strong style="color: #dd86a4;">marca: </strong>Redragon
+                    <p style="color: #4d3a1a;">teclado de alta perfomance para devs e gamers</p>
+                    <p style="color: #4d3a1a;font-weight: bold;font-size: 1.2rem;">preço: R$350,00</p>
+                    <a href="#" class="botaoPrincipal">adicionar ao carrinho</a>
                 </article>
-                <article>
-                    <h3>monitor 4K 27</h3>
-                    <img src="https://images.pexels.com/photos/948050/pexels-photo-948050.jpeg" alt="monitor 4k apple muito eficiente" width="300">
-                    <p>resoluão máxima para produtividade e desing.</p>
-                    <p>preço: R$2.100,00</p>
+                <article  class="cartaoProduto">
+                    <h3  class="nomeProduto" style="color: #4d3a1a;">monitor 4K 27</h3>
+                    <div style="max-width: 800px; margin: 0 auto; text-align: center;"></div>
+                    <img 
+                    src="https://images.pexels.com/photos/948050/pexels-photo-948050.jpeg" 
+                    alt="monitor 4k apple muito eficiente" 
+                    width="260"
+                    style="border-radius: 4px;margin-bottom: 1rem;"
+                    />
+                     <p><strong style="color: #dd86a4;">marca: </strong>Apple
+                    <p style="color: #4d3a1a;">resoluão máxima para produtividade e desing.</p>
+                    <p style="color: #4d3a1a;font-weight: bold;font-size: 1.2rem;">preço: R$2.100,00</p>
+                    <a href="#" class="botaoPrincipal">adicionar ao carrinho</a>
                 </article>
 
             </section>
-            <section id="servicos">
-                <h2>serviços técnicos</h2>
+            <!--secao servicos tecnicos-->
+            <section id="servicos" class="container">
+                <h2 class="tituloSecao">serviços técnicos</h2>
                 <table border="1">
                     <thead>
                         <tr>

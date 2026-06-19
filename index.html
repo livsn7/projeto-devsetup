@@ -6,7 +6,7 @@
     <title>Devsetup Equipamentos</title>
 </head>
 <body>
-       <style>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -86,7 +86,7 @@
                 margin-top: 1rem;
             }
 
-              .botaoPrincipal:hover {
+            .botaoPrincipal:hover {
             background-color: #966c51;
             color: #ffffff;
         }
@@ -138,7 +138,7 @@
                 transform: translateY(-5px);
             }
 
-              .rodapePrincipal {
+            .rodapePrincipal {
             background-color: #a39279;
             color: #ffffff;
             padding: 3rem 5%;
@@ -158,11 +158,32 @@
             font-size: 1.5rem;
             color: #a39279;
         }
+        .tabelaTop {
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        background-color: #a39279;
+        border: 1px solid #e0e0e0;
+        }
+
+        .tabelaTop table,
+        thead,
+        tbody,
+        tr,
+        th,
+        td{
+            border: 1px solid #1a1a1a;
+        }
+        tr {
+            background-color: #dd86a4;
+        }
+
+
     </style>
     <header id="header" class="cabecalhoPrincipal">
-         <div id="logo">
+        <div id="logo">
             <h1  class="nomeLogo">Devsetup Equipamentos</h1>
-         </div>
+        </div>
         <nav id="nav" class="listaNavegacao">
             <ul>
                 <li>
@@ -199,10 +220,10 @@
         <main>
             <!--secao hero-->
             <section id="categorias" class="secaoHero" 
-         style=
-         "background-color: #f6f3ee;
-         text-align: center;padding: 5rem 2rem;
-         border-bottom: 4px solid #dd86a4;"
+            style=
+            "background-color: #f6f3ee;
+            text-align: center;padding: 5rem 2rem;
+            border-bottom: 4px solid #dd86a4;"
                 >
                 <h2 style="font-size: 2.5rem;color: #4d3a1a ;">nossas categorias</h2>
                 <ul>
@@ -216,20 +237,23 @@
             <section id="produtos" class="container" style="background-color: #b6afa4;">
                 <h2 class="tituloSecao" style="color: #423729; font-weight: 2.5rem;">produtos em destaque</h2>
                 <div style="max-width: 800px; margin: 0 auto; text-align: center;"></div>
-                <article class="cartaoProduto">
+                <article class="gradeProdutos">
+                    <div class="cartaoProduto">
                     <h3 class="nomeProduto" style="color: #4d3a1a;">teclado mecanico rgb</h3>
                     <img 
                     src="https://images.pexels.com/photos/34204702/pexels-photo-34204702.jpeg" 
                     alt="teclado mecanico de gatinho transparente"
-                     width="260"
-                     style="border-radius: 4px;margin-bottom: 1rem;"
-                     />
-                     <p><strong style="color: #dd86a4;">marca: </strong>Redragon
+                    width="260"
+                    style="border-radius: 4px;margin-bottom: 1rem;"
+                    />
+                    <p><strong style="color: #dd86a4;">marca: </strong>Redragon
                     <p style="color: #4d3a1a;">teclado de alta perfomance para devs e gamers</p>
                     <p style="color: #4d3a1a;font-weight: bold;font-size: 1.2rem;">preço: R$350,00</p>
                     <a href="#" class="botaoPrincipal">adicionar ao carrinho</a>
+                    </div>
                 </article>
-                <article  class="cartaoProduto">
+                <article class="gradeProdutos">
+                    <div class="cartaoProduto">
                     <h3  class="nomeProduto" style="color: #4d3a1a;">monitor 4K 27</h3>
                     <div style="max-width: 800px; margin: 0 auto; text-align: center;"></div>
                     <img 
@@ -238,38 +262,41 @@
                     width="260"
                     style="border-radius: 4px;margin-bottom: 1rem;"
                     />
-                     <p><strong style="color: #dd86a4;">marca: </strong>Apple
+                    <div><strong style="color: #dd86a4;">marca: </strong>Apple
                     <p style="color: #4d3a1a;">resoluão máxima para produtividade e desing.</p>
                     <p style="color: #4d3a1a;font-weight: bold;font-size: 1.2rem;">preço: R$2.100,00</p>
                     <a href="#" class="botaoPrincipal">adicionar ao carrinho</a>
+                    </div>
                 </article>
 
             </section>
             <!--secao servicos tecnicos-->
-            <section id="servicos" class="container">
-                <h2 class="tituloSecao">serviços técnicos</h2>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>serviço</th>
-                            <th>prazo</th>
-                            <th>preço</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>formatação com windows 11</td>
-                            <td>24 horas</td>
-                            <td>R$150,00</td>
-                        </tr>
-                        <tr>
-                            <td>limpeza tecnica</td>
-                            <td>12 horas</td>
-                            <td>R$100,00</td>
-                        </tr>
-                    </tbody>
-
-                </table>
+            <section id="servicos" class="container tabelaTop">
+                <div>
+                    <h2 class="tituloSecao">serviços técnicos</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>serviço</th>
+                                <th>prazo</th>
+                                <th>preço</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>formatação com windows 11</td>
+                                <td>24 horas</td>
+                                <td>R$150,00</td>
+                            </tr>
+                            <tr>
+                                <td>limpeza tecnica</td>
+                                <td>12 horas</td>
+                                <td>R$100,00</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
 
             </section>
         </main>

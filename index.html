@@ -117,6 +117,13 @@
                 margin-bottom: 2rem;
             }
 
+            .cardProdutos {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+            }
+
             .gradeProdutos {
                 display: flex;
                 gap: 2rem;
@@ -172,10 +179,16 @@
         tr,
         th,
         td{
-            border: 1px solid #1a1a1a;
+            border: 4px solid #1a1a1a;
+            border-color: #c0b8aa;
+            border-radius: 4%;
         }
         tr {
-            background-color: #dd86a4;
+            background-color: #e0e0e0;
+        }
+        .letraTabela{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 3;
         }
 
 
@@ -236,38 +249,40 @@
             <!--secao produtos-->
             <section id="produtos" class="container" style="background-color: #b6afa4;">
                 <h2 class="tituloSecao" style="color: #423729; font-weight: 2.5rem;">produtos em destaque</h2>
-                <div style="max-width: 800px; margin: 0 auto; text-align: center;"></div>
-                <article class="gradeProdutos">
-                    <div class="cartaoProduto">
-                    <h3 class="nomeProduto" style="color: #4d3a1a;">teclado mecanico rgb</h3>
-                    <img 
-                    src="https://images.pexels.com/photos/34204702/pexels-photo-34204702.jpeg" 
-                    alt="teclado mecanico de gatinho transparente"
-                    width="260"
-                    style="border-radius: 4px;margin-bottom: 1rem;"
-                    />
-                    <p><strong style="color: #dd86a4;">marca: </strong>Redragon
-                    <p style="color: #4d3a1a;">teclado de alta perfomance para devs e gamers</p>
-                    <p style="color: #4d3a1a;font-weight: bold;font-size: 1.2rem;">preço: R$350,00</p>
-                    <a href="#" class="botaoPrincipal">adicionar ao carrinho</a>
-                    </div>
-                </article>
-                <article class="gradeProdutos">
-                    <div class="cartaoProduto">
-                    <h3  class="nomeProduto" style="color: #4d3a1a;">monitor 4K 27</h3>
-                    <div style="max-width: 800px; margin: 0 auto; text-align: center;"></div>
-                    <img 
-                    src="https://images.pexels.com/photos/948050/pexels-photo-948050.jpeg" 
-                    alt="monitor 4k apple muito eficiente" 
-                    width="260"
-                    style="border-radius: 4px;margin-bottom: 1rem;"
-                    />
-                    <div><strong style="color: #dd86a4;">marca: </strong>Apple
-                    <p style="color: #4d3a1a;">resoluão máxima para produtividade e desing.</p>
-                    <p style="color: #4d3a1a;font-weight: bold;font-size: 1.2rem;">preço: R$2.100,00</p>
-                    <a href="#" class="botaoPrincipal">adicionar ao carrinho</a>
-                    </div>
-                </article>
+                <div class="cardProdutos">
+                    <article class="gradeProdutos">
+                        <div class="cartaoProduto">
+                        <h3 class="nomeProduto" style="color: #4d3a1a;">teclado mecanico rgb</h3>
+                        <img 
+                        src="https://images.pexels.com/photos/34204702/pexels-photo-34204702.jpeg" 
+                        alt="teclado mecanico de gatinho transparente"
+                        width="260"
+                        style="border-radius: 4px;margin-bottom: 1rem;"
+                        />
+                        <p><strong style="color: #dd86a4;">marca: </strong>Redragon
+                        <p style="color: #4d3a1a;">teclado de alta perfomance para devs e gamers</p>
+                        <p style="color: #4d3a1a;font-weight: bold;font-size: 1.2rem;">preço: R$350,00</p>
+                        <a href="#" class="botaoPrincipal">adicionar ao carrinho</a>
+                        </div>
+                    </article>
+                    <article class="gradeProdutos">
+                        <div class="cartaoProduto">
+                        <h3  class="nomeProduto" style="color: #4d3a1a;">monitor 4K 27</h3>
+                        <div style="max-width: 800px; margin: 0 auto; text-align: center;"></div>
+                        <img 
+                        src="https://images.pexels.com/photos/948050/pexels-photo-948050.jpeg" 
+                        alt="monitor 4k apple muito eficiente" 
+                        width="260"
+                        style="border-radius: 4px;margin-bottom: 1rem;"
+                        />
+                        <div><strong style="color: #dd86a4;">marca: </strong>Apple
+                        <p style="color: #4d3a1a;">resoluão máxima para produtividade e desing.</p>
+                        <p style="color: #4d3a1a;font-weight: bold;font-size: 1.2rem;">preço: R$2.100,00</p>
+                        <a href="#" class="botaoPrincipal">adicionar ao carrinho</a>
+                        </div>
+                    </article>
+
+                </div>
 
             </section>
             <!--secao servicos tecnicos-->
@@ -277,21 +292,21 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>serviço</th>
-                                <th>prazo</th>
-                                <th>preço</th>
+                                <th style="background-color: #e2c2cf;">serviço</th>
+                                <th style="background-color: #e2c2cf;">prazo</th>
+                                <th style="background-color: #e2c2cf;">preço</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>formatação com windows 11</td>
-                                <td>24 horas</td>
-                                <td>R$150,00</td>
+                                <td class="letraTabela">formatação com windows 11</td>
+                                <td class="letraTabela">24 horas</td>
+                                <td class="letraTabela">R$150,00</td>
                             </tr>
                             <tr>
-                                <td>limpeza tecnica</td>
-                                <td>12 horas</td>
-                                <td>R$100,00</td>
+                                <td class="letraTabela">limpeza tecnica</td>
+                                <td class="letraTabela">12 horas</td>
+                                <td class="letraTabela">R$100,00</td>
                             </tr>
                         </tbody>
                         

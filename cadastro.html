@@ -7,7 +7,7 @@
 </head>
 </head>
 <body>
-       <style>
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -87,7 +87,7 @@
                 margin-top: 1rem;
             }
 
-              .botaoPrincipal:hover {
+            .botaoPrincipal:hover {
             background-color: #966c51;
             color: #ffffff;
         }
@@ -157,21 +157,35 @@
             font-weight: bold;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 1.5rem;
-            color: #a39279;
+            color: #443928;
+        }
+        .cadastroTop{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: x-large;
+        }
+        .cadasTro {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #333333;
         }
     </style>
 <body>
     <header>
-        <h1>crie sua conta na devsetup</h1>
-        <nav>
-            <a href="index.html">voltar para a pagina inicial</a>
+        <h1 header id="header" class="cabecalhoPrincipal" style="color: #dd86a4;">Crie sua conta na devsetup</h1>
+        <div id="logo">
+        <nav id="nav" class="listaNavegacao">
+            <a href="index.html" style="color: #a39279 ;">voltar para a pagina inicial</a>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>formulário de cadastro</h2>
+        <section id="categorias" class="secaoHero" 
+            style=
+            "background-color: #f6f3ee;
+            text-align: center;padding: 5rem 2rem;
+            border-bottom: 4px solid #dd86a4;"
+                >
+            <h2 class="tituloSecao" style="color: #423729; font-weight: 2.5rem;">formulário de cadastro</h2>
             <form>
-                <label for="nome">nome completo:</label><br>
+                <label for="nome" class="letrasBonitas">Nome completo:</label><br>
                 <input 
                 type="text" 
                 id="nome" 
@@ -179,7 +193,7 @@
                 placeholder="digite seu nome completo"
                 required>
                 <br><br>
-                <label for="email">email:</label><br><br>
+                <label for="email"  class="letrasBonitas">Email:</label><br><br>
                 <input 
                 type="email" 
                 id="email" 
@@ -187,7 +201,7 @@
                 placeholder="digite seu email"
                 required>
                 <br><br>
-                <label for="senha">senha:</label><br><br>
+                <label for="senha"  class="letrasBonitas">Senha:</label><br><br>
                 <input 
                 type="password" 
                 id="senha" 
@@ -196,26 +210,26 @@
                 required>
                 <br><br>
 
-                <label>Nível do Cliente:</label><br>
+                <label class="letrasBonitas">Nível do Cliente:</label><br>
                 <input 
                 type="radio" 
                 id="comum" 
                 name="nível" 
                 value="comum">
-                <label for="comum">Cliente comum</label><br>
+                <label for="comum"  class="cadastroTop">Cliente comum</label><br>
                 <input 
                 type="radio" 
                 id="empresa" 
                 name="nivel" 
                 value="empresa">
-                <label for="comum">cliente comum</label><br>
+                <label for="comum"  class="cadastroTop">cliente comum</label><br>
                 <input 
                 type="radio" 
                 id="empresa" name="nivel" 
                 value="empresa">
-                <label for="empresa">empresa (CNPJ)</label><br><br>
-                <label for="interesse">area de interesse</label>
-                <select 
+                <label for="empresa"  class="cadastroTop">Empresa (CNPJ)</label><br><br>
+                <label for="interesse" class="letrasBonitas">area de interesse</label>
+                <select style="background-color: #ffffff;"
                 name="interesse" 
                 id="interesse">
                 <option value="hardware">hardware</option>
@@ -223,7 +237,7 @@
                 <option value="desenvolvimento">desenvolvimento</option>
                 </select><br><br>
                 <button>
-                    <type="submit">Enviar Cadastro</button>
+                    <type="submit" >Enviar Cadastro</button>
                     </form>
         </section>
     </main>
